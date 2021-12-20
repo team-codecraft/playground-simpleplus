@@ -37,6 +37,18 @@ describe('Test suit minus', function () {
 	it('4 - 5 = -1', function () {
 		expect(psp.minus(4, 5)).to.equal(-1);
   });
+  
+	it('"a" - 5 = false', function () {
+		expect(psp.minus("a", 5)).to.equal(false);
+  });
+  
+	it('4 - 5 - 3 = -4', function () {
+		expect(psp.minus(4, 5, 3)).to.equal(-4);
+  });
+  
+	it('4 - 5 - 3 - 10 = -14', function () {
+		expect(psp.minus(4, 5, 3, 10)).to.equal(-14);
+  });
 
 	it('A - 4 = false', function () {
 		expect(psp.minus('A', 4)).to.be.false;
@@ -46,8 +58,8 @@ describe('Test suit minus', function () {
 		expect(psp.minus(3, 3, 4)).to.equal(-4);
   });
 
-	it('1 - 1 - 1 - 1 = -4', function () {
-		expect(psp.minus(1, 1, 1, 1)).to.equal(-4);
+	it('1 - 1 - 1 - 1 = -2', function () {
+		expect(psp.minus(1, 1, 1, 1)).to.equal(-2);
   });
 
 });
