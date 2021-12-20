@@ -9,10 +9,16 @@ function Psp() {
 
 		var answer = rest[0];
 
-		rest.slice(1).forEach((v) => {
-			if (typeof v !== 'number') return false;
-			else answer-= v;
-		})
+		for (let index = 1; index < rest.length; index++) {
+			const element = rest[index];
+			if (typeof element !== 'number') {
+				answer = false;
+				break;
+			} else {
+				answer-= element;
+			} 
+		}
+
 
 		return answer;
 

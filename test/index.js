@@ -62,4 +62,8 @@ describe('Test suit minus', function () {
 		expect(psp.minus(1, 1, 1, 1)).to.equal(-2);
   });
 
+	it('1 - A - 1 - 1 = false', function () {
+		expect(psp.minus(1, 'A', 1, 1)).to.equal(false);
+	});
+
 });
