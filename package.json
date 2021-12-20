@@ -4,14 +4,14 @@
   "description": "plus two numbers",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/team-codecraft/playground-simpleplus.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/team-codecraft/playground-simpleplus/issues"
   },
