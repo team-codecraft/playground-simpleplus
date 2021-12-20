@@ -1,2 +1,3 @@
 # playground-simpleplus
-plus two numbers 
+plus two numbers
+minus two numbers
