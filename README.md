@@ -1,5 +1,3 @@
-[![Node.js Package](https://github.com/team-codecraft/playground-simpleplus/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/team-codecraft/playground-simpleplus/actions/workflows/npm-publish.yml)
-
 # playground-simpleplus
 plus two numbers
 minus two numbers
