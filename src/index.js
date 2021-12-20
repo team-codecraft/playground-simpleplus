@@ -1,6 +1,6 @@
 function Psp() {
-	Psp.prototype.plus = function () {
-
+	Psp.prototype.plus = function (a, b) {
+		return a + b;
 	}
 
 	Psp.prototype.minus = function () {
