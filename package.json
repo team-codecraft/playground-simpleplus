@@ -1,6 +1,6 @@
 {
   "name": "@codecraft.co/playground-simpleplus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "plus two numbers",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/team-codecraft/playground-simpleplus.git"
   },
-  "author": "",
+  "contributors": [
+    {
+      "name": "jkRaccoon",
+      "email": "comsamo84@gmail.com"
+    },
+    {
+      "name": "kimsy",
+      "email": "kimsy@codecraft.co.kr"
+    },
+    {
+      "name": "zoossone",
+      "email": "zoossone@gmail.com"
+    },
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/team-codecraft/playground-simpleplus/issues"
