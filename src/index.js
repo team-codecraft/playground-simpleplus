@@ -9,15 +9,26 @@ function Psp() {
 
 		var answer = rest[0];
 
-		for (let index = 1; index < rest.length; index++) {
-			const element = rest[index];
-			if (typeof element !== 'number') {
+		//for문 이용
+		// for (let index = 1; index < rest.length; index++) {
+		// 	const element = rest[index];
+		// 	if (typeof element !== 'number') {
+		// 		answer = false;
+		// 		break;
+		// 	} else {
+		// 		answer-= element;
+		// 	} 
+		// }
+
+		//some함수 이용
+		rest.slice(1).some((v) => {
+			if (typeof v !== 'number') {
 				answer = false;
-				break;
+				return true;
 			} else {
-				answer-= element;
+				answer-= v;
 			} 
-		}
+		})
 
 
 		return answer;
