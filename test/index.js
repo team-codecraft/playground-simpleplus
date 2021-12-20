@@ -58,8 +58,8 @@ describe('Test suit minus', function () {
 		expect(psp.minus(3, 3, 4)).to.equal(-4);
   });
 
-	it('1 - 1 - 1 - 1 = -4', function () {
-		expect(psp.minus(1, 1, 1, 1)).to.equal(-4);
+	it('1 - 1 - 1 - 1 = -2', function () {
+		expect(psp.minus(1, 1, 1, 1)).to.equal(-2);
   });
 
 });
