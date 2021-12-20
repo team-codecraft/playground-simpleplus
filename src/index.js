@@ -3,33 +3,18 @@ function Psp() {
 
 	}
 
-	Psp.prototype.minus = function (a,b) {
-		var c,d;
-		
-		switch(typeof a) {
-			case 'string':
-				c = Number(a);
-				break;
-			case 'number':
-				c = a;
-				break;
-		}
+	Psp.prototype.minus = function (...rest) {
+		if (typeof rest[0] !== 'number') return false;
 
-		switch(typeof b) {
-			case 'string':
-				d = Number(b);
-				break;
-			case 'number':
-				d = a;
-				break;
-		}
+		var answer = rest[0];
 
-		if (c === undefined || d === undefined) {
-			return null;
-		}
+		rest.slice(1).forEach((v) => {
+			if (typeof v !== 'number') return false;
+			else answer-= v;
+		})
 
-		return c-d;
-		
+		return answer;
+
 	}
 }
 module.exports = Psp;
