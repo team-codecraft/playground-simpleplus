@@ -25,6 +25,10 @@ describe('Test suit plus', function () {
 		expect(psp.plus(1, 1, 1, 1)).to.equal(4);
   });
 
+	it('null = false', function () {
+		expect(psp.plus()).to.be.false;
+  });
+
 
 });
 
